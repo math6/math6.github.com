@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: hexo | Hexo</title>
+  <title>Category: hexo学习 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/categories/hexo/">
+<meta property="og:url" content="http://yoursite.com/categories/hexo学习/">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -70,7 +70,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+    <a class="article-category-link" href="/categories/hexo学习/">hexo学习</a>
   </div>
 
   </div>
@@ -89,9 +89,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：<br>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：<br>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：<br>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：<br>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：<br>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：</p>
-<p>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：<br>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：</p>
-<p>搞了半天真得搞到死，妥妥的死。<br>话说，做个测试看看效果如何吧：</p>
+        <p>搞hexo弄了一晚上，非IT男，难得的劣势体现出来了。多亏L出手搭救。。。总结下：</p>
+<p>1、安装了Node.js，mysygit，Sbulime Text。</p>
+<p>2、在我自己这边的盘内（G:\ABC）下用了git bash。<br>键入：<br>hexo init<br>npm install</p>
+<p>然后测试：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 有界面了。</p>
+<p>3、用Sbulime Text打开G:\ABC中的_config.yml，在最后的deploy项下编辑：</p>
+<p>deploy:<br>  type: github<br>  repository: <a href="https://github.com/math6/math6.github.git" target="_blank" rel="external">https://github.com/math6/math6.github.git</a><br>  branch: master</p>
+<p> 之后用git bash完成部署：</p>
+<p>hexo generate<br>hexo deploy</p>
+<p>其实这两个命令可以合并起来 hexo g &amp;&amp; hexo d</p>
+<p>4、创建密钥。私钥创建：</p>
+<p>ssh-keygen -t rsa -C “41010@qq.com” -f ~/.ssh/github</p>
+<p>我没回车输密码<br>然后在C:中找到了.ssh目录<br>记事本打开了github.pub，并粘贴到github的账户管理中的SSH KEY内。</p>
+<p>因为一直密钥失败，所以找了原因，应该是使用了之前生成过的密钥，但是后来因为重复操作又生成了新的密钥，所以冲突了。</p>
+<p>5、获取网站的地址：</p>
+<p>在github官方主页上登录，将公钥的.com改为.io。这样最终的浏览地址就改为<a href="https://math6.github.io。注意，这边一定要加“s”。" target="_blank" rel="external">https://math6.github.io。注意，这边一定要加“s”。</a><br>然后在本地做测试。先在G:\ABC中右键git bash，然后键入hexo s。千万不要关闭，这是本地调试要求。<br>然后在浏览器处键入：<br><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>本地调试完毕后，CTRL+C终止hexo s。<br>内容无误后，hexo g &amp;&amp; d。</p>
 
       
     </div>
@@ -117,7 +129,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo学习/">hexo学习</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
