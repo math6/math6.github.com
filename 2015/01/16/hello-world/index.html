@@ -4,21 +4,27 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
-  <title>Hexo</title>
+  <title>Hello World | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
     <meta name="author" content="John Doe">
   
   
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/">
+    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trobuleshooting or you can ask me on GitHub.
+Quick">
+  
+  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trobuleshooting or you can ask me on GitHub.
+Quick">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="http://yoursite.com/2015/01/16/hello-world/">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trobuleshooting or you can ask me on GitHub.
+Quick">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Hello World">
+<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trobuleshooting or you can ask me on GitHub.
+Quick">
 
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -54,68 +60,7 @@
   </nav>
   <div class="clearfix"></div>
 </header>
-    <div class="content">
-
-
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/01/16/name-of-new-post/">
-  <time datetime="2015-01-16T03:51:43.000Z">
-    Jan 16 2015
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2015/01/16/name-of-new-post/">hexo，终于搞出了第一篇日志。</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>从2015年01月07日00点30开始搞hexo，弄了一晚上，非IT男，难得的劣势体现出来了。多亏L出手搭救。。。总结下：</p>
-<p>1、安装了Node.js，mysygit，Sbulime Text。</p>
-<p>2、在我自己这边的盘内（G:\ABC）右键后点击（git bash）。</p>
-<p>键入：</p>
-<p>hexo init<br>npm install</p>
-<p>3、用Sbulime Text打开当前路径（G:\ABC）中的（_config.yml），在最后的deploy项下编辑：</p>
-<p>deploy:<br>  type: github<br>  repository: <a href="https://github.com/math6/math6.github.git" target="_blank" rel="external">https://github.com/math6/math6.github.git</a><br>  branch: master</p>
-<p>之后用git bash完成部署：</p>
-<p>hexo generate<br>hexo deploy</p>
-<p>其实这两个命令可以合并起来 hexo g &amp;&amp; hexo d</p>
-<p>4、创建密钥。私钥创建：</p>
-<p>ssh-keygen -t rsa -C “41010@qq.com” -f ~/.ssh/github</p>
-<p>我没回车输密码。<br>然后在（C:）中找到了（.ssh）文件目录。<br>用记事本或者Sublime打开github.pub，复制出里边的密钥，并粘贴到github账户管理中的SSH KEY内。<br>也可以用notepad命令打开写字板。</p>
-<p>因为一直密钥失败，所以找了原因，应该是使用了之前生成过的密钥，但是后来因为重复操作又生成了新的密钥，所以冲突了。</p>
-<p>5、获取网站的地址：</p>
-<p>在github官方主页上登录，将公钥的.com改为.io。<br>这样最终的浏览地址就改为<a href="https://math6.github.io。" target="_blank" rel="external">https://math6.github.io。</a><br>注意，这边一定要加“s”。</p>
-<p>然后在本地做测试。先在路径（G:\ABC）中右键点击（git bash），然后键入：</p>
-<p>hexo s</p>
-<p>千万不要关闭，这是本地调试要求。然后在浏览器处键入：</p>
-<p><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
-<p>本地调试完毕后，CTRL+C终止hexo s。<br>内容无误后，hexo g &amp;&amp; d。<br>上传成功。</p>
-<p>PS：感谢L同学大力支持。</p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
+    <div class="content"><article class="post">
   <header>
     
       <div class="icon"></div>
@@ -127,7 +72,7 @@
     
     
   
-    <h1 class="title"><a href="/2015/01/16/hello-world/">Hello World</a></h1>
+    <h1 class="title">Hello World</h1>
   
 
   </header>
@@ -155,7 +100,7 @@
 
     
   </div>
-  <footer class="end-sep">
+  <footer>
     
       
       
@@ -163,15 +108,6 @@
     <div class="clearfix"></div>
   </footer>
 </article>
-
-
-  
-
-  <nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav>
 
 </div>
   </div>
